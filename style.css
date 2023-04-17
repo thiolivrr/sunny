@@ -9,6 +9,7 @@ header {
   display: flex;
   font-size: 1.2em;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -54,6 +55,7 @@ header nav button:hover {
   font-family: "Fraunces", serif;
   font-weight: 900;
   color: white;
+  text-align: center;
 }
 
 #arrow {
@@ -79,6 +81,8 @@ main {
 .box {
   height: 720px;
   width: 50%;
+  min-width: 375px;
+  flex-grow: 1;
 }
 
 .stand_transform {
@@ -100,7 +104,7 @@ article p {
 }
 
 #learn1:hover {
-  text-decoration: 5px underline rgba(208, 255, 0, 0.712);
+  text-decoration: 5px underline #FFD302;
   cursor: pointer;
 }
 
@@ -109,7 +113,7 @@ article p {
 }
 
 .learn:hover {
-  text-decoration: 5px underline pink;
+  text-decoration: 5px underline #FE6F61;
   cursor: pointer;
 }
 
@@ -142,14 +146,22 @@ article p {
   padding-bottom: 100px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
   text-align: center;
   gap: 20px;
+}
+
+#design {
+  color: hsl(212, 27%, 19%);
+}
+
+#photography {
+  color: hsl(198, 62%, 26%);
 }
 
 #design h3 {
   font-size: 2em;
   font-family: "Fraunces", serif;
-  color: hsl(212, 27%, 19%);
 }
 
 #photography h3 {
@@ -219,6 +231,8 @@ nav a {
   display: flex;
   justify-content: center;
   padding: 80px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
   font-family: "Fraunces", serif;
   font-size: 1.5em;
   color: gray;
@@ -238,6 +252,7 @@ nav a {
 
 #images {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #images img {
@@ -248,13 +263,71 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: hsl(168, 34%, 41%);
+  background-color: hsl(168, 30%, 54%);
 }
 
 footer img {
   max-width: 300px;
   max-height: 80px;
+  margin: 40px;
 }
+
+footer nav {
+  display: flex;
+  gap: 50px;
+  font-family: "Barlow", sans-serif;
+}
+
+footer nav a {
+  color: hsl(167, 43%, 19%);
+}
+
+footer nav a:hover {
+  color: white;
+}
+
+#svg-div {
+  display: flex;
+  gap: 30px;
+  padding: 65px;
+}
+
+#svg-div svg {
+  fill: hsl(167, 46%, 22%);
+}
+
+#svg-div svg:hover {
+  fill: white;
+  cursor: pointer;
+}
+
+@media  screen and (max-width: 700px) {
+  .logo {
+    
+  }
+
+  #creatives {
+    gap: 100px;
+  }
+  
+  #photography {
+    background-image: url(images/mobile/image-photography.jpg);
+  }
+  
+  #design {
+    background-image: url(images/mobile/image-graphic-design.jpg);
+  }
+
+  #images img {
+    width: 50% ;
+  }
+
+  .testimonials {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
 
 
 
