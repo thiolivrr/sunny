@@ -130,7 +130,7 @@ article p {
 }
 
 #learn1:hover {
-  text-decoration: 5px underline #FFD302;
+  text-decoration: 5px underline #ffd302;
   cursor: pointer;
 }
 
@@ -139,7 +139,7 @@ article p {
 }
 
 .learn:hover {
-  text-decoration: 5px underline #FE6F61;
+  text-decoration: 5px underline #fe6f61;
   cursor: pointer;
 }
 
@@ -147,7 +147,8 @@ article p {
   font-size: 2.5em;
 }
 
-#transform, #stand {
+#transform,
+#stand {
   background-repeat: none;
   background-size: cover;
 }
@@ -214,13 +215,14 @@ aside {
   padding: 20px;
 }
 
-
 #photography {
   background-image: url(images/desktop/image-photography.jpg);
+  background-size: cover;
 }
 
 #design {
   background-image: url(images/desktop/image-graphic-design.jpg);
+  background-size: cover;
 }
 
 #clients {
@@ -269,7 +271,7 @@ aside {
 }
 
 #images img {
-  width: 25% ;
+  width: 25%;
 }
 
 footer {
@@ -294,7 +296,6 @@ footer nav {
 footer nav a {
   color: hsl(167, 43%, 19%);
   transition: 0.3s;
-
 }
 
 footer nav a:hover {
@@ -322,37 +323,34 @@ footer nav a:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: #FE7263;
+  background: #fe7263;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #FFBC01;
+  background: #ffbc01;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #FF4B02;
+  background: #ff4b02;
 }
 
-
-
-@media  screen and (max-width: 700px) {
-
+@media screen and (max-width: 700px) {
   #creatives {
     gap: 100px;
     font-size: 25px;
   }
-  
+
   #photography {
     background-image: url(images/mobile/image-photography.jpg);
   }
-  
+
   #design {
     background-image: url(images/mobile/image-graphic-design.jpg);
   }
 
   #images img {
-    width: 50% ;
+    width: 50%;
   }
 
   .testimonials {
@@ -373,7 +371,7 @@ footer nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     transition: all 0.5s ease-in-out;
     border-radius: 10px 0px 0px 10px;
     display: none;
@@ -384,7 +382,7 @@ footer nav a:hover {
   }
 
   .navbar button {
-    background-color: #F786AA;
+    background-color: #f786aa;
     color: white;
   }
 
@@ -392,12 +390,13 @@ footer nav a:hover {
     background-color: #ffa601bd;
     color: white;
   }
+
+  #clients,
+  #client {
+    gap: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
-
-
-
-
-
-
-
-
