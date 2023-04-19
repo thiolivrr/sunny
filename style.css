@@ -378,7 +378,7 @@ body {
     align-items: center;
     background-color: #FFFFFF;
     transition: all 0.5s ease-in-out;
-    border-radius: 0px 0px 0px 10px;
+    border-radius: 10px 0px 0px 10px;
     display: none;
   }
 
@@ -387,12 +387,12 @@ body {
   }
 
   .navbar button {
-    background-color: #ffa601bd;
+    background-color: #F786AA;
     color: white;
   }
 
   .navbar button:hover {
-    background-color: #F786AA;
+    background-color: #ffa601bd;
     color: white;
   }
 }
