@@ -38,12 +38,9 @@
         <a class="nav-item" href="#">Projects</a>
         <button class="nav-item">CONTACT</button>
       </nav>
-      <svg class="hamburguer" onclick="ShowMenu()" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
-          fill-rule="nonzero" />
-      </svg>
+      <div class="hamburguer" onclick="ShowMenu()">
+        <img class="ham_img" src="images/icon-hamburger.svg" alt="hamburguer">
+      </div>
     </header>
     <div id="creatives">
       <h1>We Are Creatives</h1>
@@ -153,15 +150,6 @@
       </svg>
     </div>
   </footer>
-  <script>
-    function ShowMenu() {
-      var nav = document.querySelector('.navbar')
-      if (nav.style.display == 'flex') {
-        nav.style.display = 'none'
-      } else {
-        nav.style.display = 'flex'
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

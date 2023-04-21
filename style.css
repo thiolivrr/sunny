@@ -31,9 +31,7 @@ nav a {
 }
 
 .hamburguer {
-  height: 70px;
   display: none;
-  fill: white;
 }
 
 #header-div {
@@ -323,7 +321,6 @@ footer nav a:hover {
 }
 
 @media screen and (max-width: 700px) {
-
   .logo {
     min-height: 40px;
     z-index: 9;
@@ -357,8 +354,15 @@ footer nav a:hover {
 
   .hamburguer {
     display: flex;
-    padding-right: 20px;
+    height: 30px;
     z-index: 9;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    cursor: pointer;
+  }
+
+  .ham_img {
+    fill: svg;
   }
 
   .navbar {
@@ -372,7 +376,7 @@ footer nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E7B10A;
+    background-color: #e7b10a;
     transition: all 0.5s ease-in-out;
     display: none;
     padding: 0;
@@ -388,7 +392,7 @@ footer nav a:hover {
   }
 
   .navbar button:hover {
-    background-color: #FE7263;
+    background-color: #fe7263;
     color: white;
   }
 
@@ -404,4 +408,5 @@ footer nav a:hover {
     padding: 0;
     width: 60%;
   }
+  
 }
