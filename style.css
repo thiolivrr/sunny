@@ -107,7 +107,7 @@ main {
 .box {
   height: 720px;
   width: 50%;
-  min-width: 375px;
+  min-width: 350px;
   flex-grow: 1;
 }
 
@@ -151,18 +151,15 @@ article p {
 #stand {
   background-repeat: none;
   background-size: cover;
+  background-position: center;
 }
 
 #transform {
-  height: 720px;
   background-image: url(images/desktop/image-transform.jpg);
-  background-position: center top;
 }
 
 #stand {
-  height: 720px;
   background-image: url(images/desktop/image-stand-out.jpg);
-  background-position: center top;
 }
 
 #design,
@@ -171,19 +168,20 @@ article p {
   justify-content: center;
   align-items: end;
   padding-bottom: 90px;
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   text-align: center;
   gap: 20px;
 }
 
-#design {
-  color: hsl(212, 27%, 19%);
+#photography {
+  background-image: url(images/desktop/image-photography.jpg);
+  color: hsl(198, 62%, 26%);
 }
 
-#photography {
-  color: hsl(198, 62%, 26%);
+#design {
+  background-image: url(images/desktop/image-graphic-design.jpg);
+  color: hsl(212, 27%, 19%);
 }
 
 #design h3 {
@@ -215,20 +213,9 @@ aside {
   padding: 20px;
 }
 
-#photography {
-  background-image: url(images/desktop/image-photography.jpg);
-  background-size: cover;
-}
-
-#design {
-  background-image: url(images/desktop/image-graphic-design.jpg);
-  background-size: cover;
-}
-
 #clients {
   display: flex;
   justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -255,8 +242,8 @@ aside {
 
 #clients img {
   margin: auto;
-  height: 50px;
-  width: 50px;
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
 }
 
@@ -336,8 +323,17 @@ footer nav a:hover {
 }
 
 @media screen and (max-width: 700px) {
+
+  .logo {
+    min-height: 40px;
+  }
+
+  #header-div {
+    background-image: url(images/mobile/image-header.jpg);
+  }
+
   #creatives {
-    gap: 100px;
+    gap: 150px;
     font-size: 25px;
   }
 
@@ -347,6 +343,18 @@ footer nav a:hover {
 
   #design {
     background-image: url(images/mobile/image-graphic-design.jpg);
+  }
+
+  #transform {
+    height: 720px;
+    background-image: url(images/mobile/image-transform.jpg);
+    background-position: center top;
+  }
+  
+  #stand {
+
+    background-image: url(images/mobile/image-stand-out.jpg);
+    background-position: center top;
   }
 
   #images img {
@@ -404,8 +412,6 @@ footer nav a:hover {
     width: 60%;
   }
   
-  body {
-    overflow-x: hidden;
-  }
+  
 
 }
