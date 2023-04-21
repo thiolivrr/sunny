@@ -105,6 +105,7 @@ main {
 }
 
 .box {
+  min-height: 300px;
   height: 720px;
   width: 50%;
   min-width: 350px;
@@ -171,7 +172,6 @@ article p {
   background-size: cover;
   background-position: center top;
   text-align: center;
-  gap: 20px;
 }
 
 #photography {
@@ -328,6 +328,14 @@ footer nav a:hover {
     min-height: 40px;
   }
 
+  .box {
+    min-height: auto;
+    height: 500px;
+    width: 50%;
+    min-width: 350px;
+    flex-grow: 1;
+  }
+
   #header-div {
     background-image: url(images/mobile/image-header.jpg);
   }
@@ -335,26 +343,6 @@ footer nav a:hover {
   #creatives {
     gap: 150px;
     font-size: 25px;
-  }
-
-  #photography {
-    background-image: url(images/mobile/image-photography.jpg);
-  }
-
-  #design {
-    background-image: url(images/mobile/image-graphic-design.jpg);
-  }
-
-  #transform {
-    height: 720px;
-    background-image: url(images/mobile/image-transform.jpg);
-    background-position: center top;
-  }
-  
-  #stand {
-
-    background-image: url(images/mobile/image-stand-out.jpg);
-    background-position: center top;
   }
 
   #images img {
@@ -411,7 +399,5 @@ footer nav a:hover {
     padding: 0;
     width: 60%;
   }
-  
-  
 
 }
