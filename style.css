@@ -270,7 +270,7 @@ footer {
 footer img {
   max-width: 300px;
   max-height: 80px;
-  margin: 40px;
+  margin: 20px;
 }
 
 footer nav {
@@ -318,6 +318,12 @@ footer nav a:hover {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #ff4b02;
+}
+
+.arrowup {
+  fill: white;
+  margin-top: 50px;
+  height: 100px;
 }
 
 @media screen and (max-width: 700px) {
