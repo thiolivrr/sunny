@@ -50,6 +50,10 @@ header nav a {
   transition: 0.3s;
 }
 
+header nav a:hover {
+  color: black;
+}
+
 header nav button {
   color: black;
   border: 1px solid white;
@@ -384,7 +388,7 @@ footer nav a:hover {
   }
 
   .navbar button:hover {
-    background-color: #FFACAC;
+    background-color: #FE7263;
     color: white;
   }
 
@@ -400,5 +404,4 @@ footer nav a:hover {
     padding: 0;
     width: 60%;
   }
-
 }
